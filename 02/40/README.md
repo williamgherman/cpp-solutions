@@ -10,3 +10,4 @@ struct Sales_data {
     unsigned int units_sold = 0;
     double revenue = 0.0;
 };
+```
