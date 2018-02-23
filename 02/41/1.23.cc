@@ -10,7 +10,7 @@ int main()
 {
     Sales_data item, total;
     double price;
-    
+
     std::cin >> total.name >> total.units_sold >> price;
     total.revenue = price * total.units_sold;
 
@@ -22,13 +22,16 @@ int main()
             total.units_sold += item.units_sold;
             total.revenue += item.revenue;
         } else {
-            std::cout << item.name << " " << item.units_sold << " "
-                      << item.revenue << " " << item.revenue / item.units_sold
-                      << std::endl;
+            std::cout << total.name << " " << total.units_sold 
+                      << " " << total.revenue << " "
+                      << total.revenue / total.units_sold << std::endl;
+            total.name = item.name;
+            total.units_sold = item.units_sold;
+            total.revenue = item.revenue;
         }
     }
-    std::cout << total.name << " " << total.units_sold << " "
-              << total.revenue << " " << total.revenue / total.units_sold 
+    std::cout << total.name << " " << total.units_sold
+              << " " << total.revenue << " " << total.revenue / total.units_sold
               << std::endl;
     return 0;
 }

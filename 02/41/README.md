@@ -6,6 +6,4 @@ Use your `Sales_data` class to rewrite the exercises in &sect; 1.5.1 (p. 22),
 
 ### Solution
 
-See `1.20.cc` through `1.25.cc` for reworks of those exercises.
-
-TODO 1.22 - 1.25
+See program files for reworks of Exercises 1.20 through 1.25.
