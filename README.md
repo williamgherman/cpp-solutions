@@ -4,7 +4,7 @@ My ongoing solutions to the exercises in "C++ Primer", 5th ed., by Lippman,
 Lajoie and Moo.
 
 <p align="center">
-<img src="cover.jpg" width="50%" height="50%" alt="C++ Primer Cover">
+<img src="cover.jpg" width="190" height="250" alt="C++ Primer Cover">
 </p>
 
 ## About
