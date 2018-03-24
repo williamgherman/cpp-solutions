@@ -1,0 +1,10 @@
+### Exercise 4.36
+
+Assuming `i` is an `int` and `d` is a `double` write the expression `i *= d` so
+that it does integral, rather than floating-point, multiplication.
+
+### Solution
+
+```cpp
+i *= static_cast<int>(d);
+```
