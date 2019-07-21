@@ -43,7 +43,7 @@ std::istream &read(std::istream &is, Sales_data &item)
 std::ostream &print(std::ostream &os, const Sales_data &item)
 {
     os << item.isbn() << " " << item.units_sold << " " << item.revenue << " "
-       << item.avg_price() << std::endl;
+       << item.avg_price();
     return os;
 }
 
@@ -54,18 +54,17 @@ int main(void)
         Sales_data trans;
         while (read(std::cin, trans)) {
             if (total.isbn() == trans.isbn()) {
-                add(total, trans);
+                total = add(total, trans);
             } else {
-                print(std::cout, total);
+                print(std::cout, total) << std::endl;
                 total.bookNo = trans.bookNo;
                 total.units_sold = trans.units_sold;
                 total.revenue = trans.revenue;
             }
         }
-        print(std::cout, trans);
+        print(std::cout, trans) << std::endl;
     } else {
         std::cerr << "No data?!" << std::endl;
         return 1;
     }
 }
-
