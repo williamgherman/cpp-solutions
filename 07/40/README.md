@@ -16,7 +16,7 @@ set of constructors. Explain your decisions.
 ```cpp
 class Book {
 public:
-    Book(std::string s = "Untitled"): title(s) { }
+    Book(std::string s = "Untitled", std::string t = "Anonymous"): title(s) { }
     Book(std::istream &is) { read(is, *this); }
     Book(std::string s, std::string t, int y): title(s), author(t), year(y) { }
     read(std::istream &is, Book b) {
