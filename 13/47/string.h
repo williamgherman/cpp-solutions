@@ -4,6 +4,7 @@
 #include <memory>    // allocator
 #include <algorithm> // uninitialized_copy
 #include <utility>   // pair
+#include <iostream>
 
 class String {
 public:
@@ -41,6 +42,7 @@ String::String(const char *s)
 String::String(const String &s)
 {
     init(s.data, s.end);
+    std::cout << "String copy constructor" << std::endl;
 }
 
 String &String::operator=(const String &rhs)
@@ -49,6 +51,7 @@ String &String::operator=(const String &rhs)
     free();
     data = temp.first;
     end = temp.second;
+    std::cout << "String copy-assignment operator" << std::endl;
     return *this;
 }
 
@@ -66,7 +69,7 @@ std::pair<char*, char*> String::alloc_n_copy(const char *b, const char *e)
 void String::free()
 {
     if (data) {
-        std::for_each(data, end, [this](char &c) { alloc.destroy(&c); });
+        std::for_each(data, end, [this](char &c) { alloc.destroy(&c); }
         alloc.deallocate(data, end - data);
     }
 }

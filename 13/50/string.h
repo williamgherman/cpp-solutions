@@ -4,13 +4,16 @@
 #include <memory>    // allocator
 #include <algorithm> // uninitialized_copy
 #include <utility>   // pair
+#include <iostream>
 
 class String {
 public:
     String(): String("") { }
     String(const char *);
     String(const String &);
+    String(String &&) noexcept;
     String &operator=(const String &);
+    String &operator=(String &&) noexcept;
     ~String();
     std::pair<char*, char*> alloc_n_copy(const char *, const char *);
     void free();
@@ -32,15 +35,23 @@ void String::init(const char *b, const char *e)
 String::String(const char *s)
 {
     char *e;
-    e = const_cast<char*>(s);
+    e = const_cast<char *>(s);
     while (*e)
-        ++e; 
+        e++; 
     init(s, e);
 }
 
 String::String(const String &s)
 {
     init(s.data, s.end);
+    std::cout << "String copy constructor" << std::endl;
+}
+
+String::String(String &&s) noexcept:
+    data(s.data), end(s.end)
+{
+    s.data = s.end = nullptr;
+    std::cout << "String move constructor" << std::endl;
 }
 
 String &String::operator=(const String &rhs)
@@ -49,6 +60,19 @@ String &String::operator=(const String &rhs)
     free();
     data = temp.first;
     end = temp.second;
+    std::cout << "String copy-assignment operator" << std::endl;
+    return *this;
+}
+
+String &String::operator=(String &&rhs) noexcept
+{
+    if (this != &rhs) {
+        free();
+        data = rhs.data;
+        end = rhs.end;
+        rhs.data = rhs.end = nullptr;
+    }
+    std::cout << "String move-assignment operator" << std::endl;
     return *this;
 }
 
