@@ -15,7 +15,7 @@ Which of the following initializations are legal? Explain why.
 (a) `int i = -1` is legal, but `&r = 0` is not because a reference must be bound
 to an object.  
 (b) is legal, creates a `const` pointer to the address of `i2`.  
-(c) `const int i = -1` is legal, but `&r = 0 is not because a reference must be
+(c) `const int i = -1` is legal, but `&r = 0` is not because a reference must be
 bound to an object.  
 (d) is legal, creates a `const` pointer to a `const int`, initialized to the
 address of `i2`.  

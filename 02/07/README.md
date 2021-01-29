@@ -1,6 +1,6 @@
 ### Exercise 2.07
 
-What values doe these literals represent? What type does each have?
+What values do these literals represent? What type does each have?
 
 (a) `"Who goes with F\145rgus?\012"`  
 (b) `3.14e1L`  
