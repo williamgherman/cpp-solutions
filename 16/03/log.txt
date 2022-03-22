@@ -1,0 +1,310 @@
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h: In instantiation of ‘constexpr bool std::less<_Tp>::operator()(const _Tp&, const _Tp&) const [with _Tp = Sales_data]’:
+3.cc:9:23:   required from ‘int compare(const T&, const T&) [with T = Sales_data]’
+3.cc:17:25:   required from here
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: error: no match for ‘operator<’ (operand types are ‘const Sales_data’ and ‘const Sales_data’)
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11.1.0/bits/char_traits.h:39,
+                 from /usr/include/c++/11.1.0/ios:40,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_pair.h:489:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  489 |     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/stl_pair.h:489:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::pair<_T1, _T2>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11.1.0/bits/char_traits.h:39,
+                 from /usr/include/c++/11.1.0/ios:40,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_iterator.h:422:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  422 |     operator<(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/stl_iterator.h:422:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11.1.0/bits/char_traits.h:39,
+                 from /usr/include/c++/11.1.0/ios:40,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_iterator.h:461:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  461 |     operator<(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/stl_iterator.h:461:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11.1.0/bits/char_traits.h:39,
+                 from /usr/include/c++/11.1.0/ios:40,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_iterator.h:1557:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1557 |     operator<(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/stl_iterator.h:1557:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11.1.0/bits/char_traits.h:39,
+                 from /usr/include/c++/11.1.0/ios:40,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_iterator.h:1613:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1613 |     operator<(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/stl_iterator.h:1613:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/basic_string.h:48,
+                 from /usr/include/c++/11.1.0/string:55,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/string_view:587:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’
+  587 |     operator< (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/string_view:587:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘Sales_data’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/basic_string.h:48,
+                 from /usr/include/c++/11.1.0/string:55,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/string_view:593:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)’
+  593 |     operator< (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/string_view:593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘Sales_data’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/basic_string.h:48,
+                 from /usr/include/c++/11.1.0/string:55,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/string_view:600:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’
+  600 |     operator< (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/string_view:600:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘Sales_data’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/string:55,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/basic_string.h:6326:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6326 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/basic_string.h:6326:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/string:55,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/basic_string.h:6339:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 6339 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/basic_string.h:6339:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/string:55,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/basic_string.h:6351:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6351 |     operator<(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/basic_string.h:6351:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   mismatched types ‘const _CharT*’ and ‘Sales_data’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/tuple:39,
+                 from /usr/include/c++/11.1.0/functional:54,
+                 from 3.cc:2:
+/usr/include/c++/11.1.0/array:311:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  311 |     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/array:311:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::array<_Tp, _Nm>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/functional:54,
+                 from 3.cc:2:
+/usr/include/c++/11.1.0/tuple:1518:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)’
+ 1518 |     operator<(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/tuple:1518:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::tuple<_Tps ...>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/vector:67,
+                 from /usr/include/c++/11.1.0/functional:62,
+                 from 3.cc:2:
+/usr/include/c++/11.1.0/bits/stl_vector.h:1930:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1930 |     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11.1.0/bits/stl_vector.h:1930:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11.1.0/string:48,
+                 from /usr/include/c++/11.1.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/11.1.0/bits/ios_base.h:41,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/bits/stl_function.h:386:20: note:   ‘const Sales_data’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  386 |       { return __x < __y; }
+      |                ~~~~^~~~~
+In file included from /usr/include/c++/11.1.0/bits/ios_base.h:46,
+                 from /usr/include/c++/11.1.0/ios:42,
+                 from /usr/include/c++/11.1.0/ostream:38,
+                 from /usr/include/c++/11.1.0/iostream:39,
+                 from 3.cc:1:
+/usr/include/c++/11.1.0/system_error:253:3: note: candidate: ‘bool std::operator<(const std::error_code&, const std::error_code&)’
+  253 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11.1.0/system_error:253:31: note:   no known conversion for argument 1 from ‘const Sales_data’ to ‘const std::error_code&’
+  253 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+      |             ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11.1.0/system_error:381:3: note: candidate: ‘bool std::operator<(const std::error_condition&, const std::error_condition&)’
+  381 |   operator<(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/11.1.0/system_error:381:36: note:   no known conversion for argument 1 from ‘const Sales_data’ to ‘const std::error_condition&’
+  381 |   operator<(const error_condition& __lhs,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [<builtin>: 3] Error 1
